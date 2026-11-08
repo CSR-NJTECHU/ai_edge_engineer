@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ai_asr</name>
+  <version>0.0.0</version>
+  <description>ROS 2 ASR node: FunASR paraformer-zh offline Chinese speech-to-text</description>
+  <maintainer email="chen-shurui@todo.todo">chen-shurui</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- ROS 2 基础依赖 -->
+  <depend>rclpy</depend>
+  <depend>std_srvs</depend>
+
+  <!-- ros2 launch ai_asr asr_launch.py 需要 -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- Python 侧依赖（funasr/torch/modelscope）见 requirements.txt，
+       由 scripts/setup_vm_env.sh 装进虚拟环境，不走 apt/rosdep。 -->
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

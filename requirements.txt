@@ -1,0 +1,9 @@
+# ROS 2 侧依赖由 src/ai_asr/package.xml 描述；这里只列 Python 运行时依赖。
+# 注意：torch / torchaudio 请先用 scripts/setup_vm_env.sh 里的 CPU index 安装，
+# 直接 pip install -r 会从 PyPI 拉到带 CUDA 的大包。
+numpy
+funasr
+modelscope
+soundfile
+torch
+torchaudio

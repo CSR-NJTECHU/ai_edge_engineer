@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ROS 2 / colcon
+build/
+install/
+log/
+
+# 模型权重和缓存：体积大（>1GB），不要提交
+models/asr/*
+!models/asr/README.md
+*.onnx
+*.pt
+*.bin
+*.tar.bz2
+ms_cache/
+modelscope_cache/
+
+# 运行产物（保留目录本身）
+outputs/*
+!outputs/.gitkeep
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
