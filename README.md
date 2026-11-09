@@ -3,6 +3,9 @@
 把一段录音（`samples/test.wav`）通过 ROS 2 服务转成中文文字（`outputs/result.txt`）。
 识别引擎是阿里达摩院开源的 **FunASR `paraformer-zh`** 离线模型。
 
+> 📖 **从零复现请看 [docs/手把手复现教程.md](docs/手把手复现教程.md)** ——
+> 每一步的命令、预期输出、真实耗时和踩坑记录都在里面，跟着敲就能跑通。
+
 ```
 输入音频            ROS 2 ASR 节点           FunASR 模型            识别结果
 samples/test.wav -> asr_node.py   ------>   paraformer-zh  ----> 「你好，欢迎学习 ROS 2！」
